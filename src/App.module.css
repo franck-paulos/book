@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+.app {
+    text-align: center;
+    scroll-snap-type: y mandatory;
+    overflow-x: scroll;
+    height: 100vh;
+}
+
+.page {
+    flex: 0 0 100%;
+    content: ' ';
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 80%;
+    max-width: 500px;
+}
+
+.name {
+    font-size: 96px;
+    color: white;
+    text-align: center;
+    font-family: 'Abril Fatface';
+}
+
+@media screen and (max-width: 720px) {
+    .name {
+        font-size: 64px;
+    }
+}
